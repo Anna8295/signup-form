@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+    list-style: none;
+    text-decoration: none;
+}
+
+html {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: white;
+}
+
+body{
+    min-height: 100vh;
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./images/bg-intro-desktop.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-text, .container {
+    width: 425px;
+    margin: 45px;
+}
+
+.container-text > h1 {
+    padding-bottom: 25px;
+    font-weight: 700;
+}
+
+.btn-free{
+    background-color: hsl(248, 32%, 49%);
+    text-align: center;
+    padding: 15px 10px;
+    border-radius: 10px;
+    font-size: smaller;
+    color: white;
+    width: 100%;
+}
+
+.btn-free:hover{
+    opacity: 0.9;
+}
+
+.container-form{
+	background-color: white;
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.form-control {
+	margin-bottom: 10px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+.form-control label {
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.form-control input {
+	border: 2px solid hsl(246, 25%, 77%);
+	border-radius: 4px;
+	display: block;
+	font-family: inherit;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: hsl(248, 32%, 49%);
+}
+
+.form-control.success input {
+	border-color: hsl(154, 59%, 51%);
+}
+
+.form-control.error input {
+	border-color: hsl(0, 100%, 74%);
+}
+
+.form-control i {
+	visibility: hidden;
+	position: absolute;
+	top: 15px;
+	right: 40px;
+}
+
+.form-control.success i.fa-check-circle {
+	color: hsl(154, 59%, 51%);
+	visibility: visible;
+}
+
+.form-control.error i.fa-exclamation-circle {
+	color: hsl(0, 100%, 74%);
+	visibility: visible;
+}
+
+.form-control small {
+	color: hsl(0, 100%, 74%);
+	position: absolute;
+    bottom: 10px;
+    right: 30px;
+	font-size: x-small;
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+input, .btn-claim {
+    width: 85%;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.btn-claim{
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.btn-claim:hover{
+    opacity: 0.7;
+}
+
+span{
+    color: hsl(246, 25%, 77%);
+}
+
+strong{
+    color: hsl(0, 100%, 74%);
+}
+
+span, strong {
+    font-size: xx-small;
+}
+
+@media (max-width: 900px) {
+    body{
+        display: block;
+        text-align: center;
+    }
+}
